@@ -7,16 +7,45 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <style>
-    .container { max-width:900px; margin:28px auto; padding:0 16px; }
-    h1 { font-size:28px; margin-bottom:6px; }
-    h2 { margin-top:18px; }
-    p, li { color:#222; line-height:1.6; }
-    .muted { color:#555; font-size:14px; margin-bottom:8px; }
-    .faq h3 { margin-top:12px; }
-    a.external { color: #0b64d3; text-decoration:underline; }
+    /* Single-column override for this support page only */
+    body.support-page .container {
+      max-width:900px;
+      margin:28px auto;
+      padding:0 16px;
+      display:block !important;
+    }
+
+    /* Make every direct child stack and take full width */
+    body.support-page .container > * {
+      width:100% !important;
+      float:none !important;
+      display:block !important;
+      box-sizing:border-box;
+    }
+
+    /* Ensure FAQ and subsections are full width */
+    body.support-page .faq,
+    body.support-page .faq h2,
+    body.support-page .faq h3,
+    body.support-page .faq p,
+    body.support-page .faq ol,
+    body.support-page .faq ul {
+      width:100% !important;
+    }
+
+    /* Link color and basic typography */
+    body.support-page h1 { font-size:28px; margin-bottom:6px; }
+    body.support-page h2 { margin-top:18px; }
+    body.support-page p, body.support-page li { color:#222; line-height:1.6; }
+    body.support-page .muted { color:#555; font-size:14px; margin-bottom:8px; }
+
+    /* Small screens keep single column — larger screens also single column */
+    @media (min-width: 900px) {
+      body.support-page .container { padding: 0 24px; }
+    }
   </style>
 </head>
-<body>
+<body class="support-page">
   <div class="container">
     <header>
       <h1>Yiexam - Support</h1>
@@ -94,8 +123,8 @@
     <section>
       <h2>Privacy & Legal</h2>
       <ul>
-        <li><a class="external" href="https://caleexamapp.com/privacy">Privacy Policy</a></li>
-        <li><a class="external" href="https://caleexamapp.com/terms">Terms of Service</a></li>
+        <li><a href="https://caleexamapp.com/privacy">Privacy Policy</a></li>
+        <li><a href="https://caleexamapp.com/terms">Terms of Service</a></li>
       </ul>
     </section>
 
