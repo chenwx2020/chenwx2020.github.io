@@ -7,15 +7,47 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
   <style>
-    .container { max-width:900px; margin:28px auto; padding:0 16px; }
-    h1 { font-size:28px; margin-bottom:6px; }
-    h2 { margin-top:18px; }
-    p, li { color:#222; line-height:1.6; }
-    .muted { color:#555; font-size:14px; margin-bottom:8px; }
-    pre.note { background:#f7f7f7; padding:12px; border-radius:6px; }
+    /* Page-scoped layout + strong overrides to force single column */
+    body.privacy-page .container { max-width:900px; margin:28px auto; padding:0 16px; display:block !important; }
+
+    /* Strong override: reset flex/grid/columns for container and all descendants */
+    body.privacy-page .container,
+    body.privacy-page .container * {
+      width:100% !important;
+      max-width:100% !important;
+      display:block !important;
+      float:none !important;
+      flex:0 0 auto !important;
+      grid-template-columns:none !important;
+      column-count:auto !important;
+      box-sizing:border-box !important;
+      margin-left:0 !important;
+      margin-right:0 !important;
+    }
+
+    /* Common layout classes that might exist in global CSS */
+    body.privacy-page .sidebar,
+    body.privacy-page .side,
+    body.privacy-page .main,
+    body.privacy-page .content,
+    body.privacy-page .row,
+    body.privacy-page .columns,
+    body.privacy-page .col {
+      display:block !important;
+      width:100% !important;
+      float:none !important;
+    }
+
+    body.privacy-page h1 { font-size:28px; margin-bottom:6px; }
+    body.privacy-page h2 { margin-top:18px; }
+    body.privacy-page p, body.privacy-page li { color:#222; line-height:1.6; }
+    body.privacy-page .muted { color:#555; font-size:14px; margin-bottom:8px; }
+    body.privacy-page p.email-plain { color:#0b64d3; font-weight:600; margin-top:6px; }
+
+    @media (min-width:900px) { body.privacy-page .container { padding:0 24px; } }
   </style>
 </head>
-<body>
+<body class="privacy-page">
   <div class="container">
     <header>
       <h1>Privacy Policy</h1>
@@ -182,6 +214,7 @@
     <h2>13. Contact Us</h2>
     <p>If you have questions about this Privacy Policy or your data, please contact us at:</p>
     <p><strong>Email</strong>: <a href="mailto:chenwx2012@yahoo.com">chenwx2012@yahoo.com</a></p>
+    <p class="email-plain">Email: chenwx2012@yahoo.com</p>
 
     <footer style="margin-top:24px;color:#666;font-size:13px;">
       <p><em>This privacy policy is effective as of February 17, 2026.</em></p>
