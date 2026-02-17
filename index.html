@@ -1,185 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Weixing Chen — Resume</title>
-  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="resume">
-    <header class="header">
-      <h1>WEIXING CHEN</h1>
-      <div class="contact-info">
-        22310 Wood Frog Dr, Boyds, MD, 20841 • (443) 878-3646 • chenwx2012@yahoo.com • U.S. Citizen
+  <div class="container">
+    <aside class="sidebar">
+      <div class="photo">WC</div>
+      <h1 class="name">Weixing Chen</h1>
+      <p class="role">Software & SCADA Engineer</p>
+
+      <div class="contact">
+        <h4>Contact</h4>
+        <p>Boyds, MD • (443) 878-3646</p>
+        <p><a href="mailto:chenwx2012@yahoo.com">chenwx2012@yahoo.com</a></p>
+        <p>U.S. Citizen</p>
       </div>
-    </header>
 
-    <section class="section">
-      <h2>PROFESSIONAL PROFILE</h2>
-      <p>
-        Software and SCADA engineer with 10+ years of experience delivering mission-critical and regulated systems,
-        spanning large-scale transit SCADA platforms and modern real-time SaaS systems. Experienced in backend
-        services, real-time messaging, audio/video communication, multi-platform clients, and cloud infrastructure.
-        Background includes multi-vendor system integration, system verification and acceptance testing, and
-        production deployment in regulated and operationally constrained environments. Strong hands-on
-        contributor with experience working across engineering, operations, and external vendors in both government
-        infrastructure and startup settings.
-      </p>
-    </section>
+      <div class="skills">
+        <h4>Skills</h4>
+        <p><strong>Languages:</strong><br>TypeScript, JavaScript, Python, Kotlin, Swift, SQL</p>
+        <p><strong>Backend:</strong><br>NestJS, Node.js, REST, WebSocket, Protobuf</p>
+        <p><strong>Realtime/Media:</strong><br>WebRTC, coturn, signaling</p>
+      </div>
 
-    <section class="section">
-      <h2>SKILLS</h2>
+      <div class="links">
+        <h4>Links</h4>
+        <p><a href="#" target="_blank">GitHub</a> • <a href="#" target="_blank">LinkedIn</a></p>
+      </div>
+    </aside>
 
-      <h3>Programming & Scripting</h3>
-      <p>TypeScript, JavaScript, Python, Kotlin, Swift, SQL</p>
+    <main class="main">
+      <section class="summary">
+        <h2>Professional Profile</h2>
+        <p>Software and SCADA engineer with 10+ years delivering mission‑critical/regulatory systems — from large transit SCADA platforms to modern real‑time SaaS. Experienced in backend services, realtime messaging, WebRTC, multi‑platform clients, and cloud infrastructure. Strong systems integration, verification, and production deployment experience.</p>
+      </section>
 
-      <h3>Backend & Services</h3>
-      <p>NestJS, Node.js, REST APIs, WebSocket, Protocol Buffers, Prisma, Redis, PostgreSQL</p>
+      <section class="experience">
+        <h2>Professional Experience</h2>
 
-      <h3>Real-time & Media Systems</h3>
-      <p>WebRTC, TURN (coturn), WebSocket signaling, real-time messaging</p>
+        <div class="job">
+          <h3>Founding Engineer / Lead Engineer — YiCircle</h3>
+          <div class="meta">May 2024 – Present</div>
+          <ul>
+            <li>Built backend services with NestJS for chat, events, user management; REST & WebSocket APIs for web/mobile.</li>
+            <li>Maintained Protocol Buffers schemas across web, Android, iOS; implemented WebSocket messaging with reconnection and heartbeat.</li>
+            <li>Implemented WebRTC signaling and deployed coturn TURN servers; set up Docker Compose dev/staging environments and integrated AWS (S3, SES, Secrets Manager, CloudWatch).</li>
+          </ul>
+        </div>
 
-      <h3>Frontend & Clients</h3>
-      <p>Nuxt 3, Vue 3, Tailwind CSS, HTML/CSS</p>
+        <div class="job">
+          <h3>SCADA Engineer — WMATA</h3>
+          <div class="meta">Washington, DC • Sep 2015 – Apr 2024</div>
+          <ul>
+            <li>System integration, verification, and commissioning for multi‑vendor SCADA (power/control/monitoring).</li>
+            <li>GE iFIX configuration, tag/database/HMI workflows; developed and executed test plans and acceptance documentation.</li>
+            <li>Coordinated vendors, ops and engineering teams to ensure production readiness in regulated environments.</li>
+          </ul>
+        </div>
 
-      <h3>Mobile Platforms</h3>
-      <p>Android (Kotlin, Jetpack Compose), iOS (SwiftUI)</p>
+        <div class="job">
+          <h3>Parsons — Electrical Engineer (SCADA)</h3>
+          <div class="meta">Washington, DC • Aug 2013 – Aug 2015</div>
+          <ul>
+            <li>Supported system integration and verification for SCADA and remote monitoring platforms.</li>
+            <li>Developed test plans, test cases, and acceptance procedures and performed laboratory and field testing.</li>
+          </ul>
+        </div>
 
-      <h3>Cloud & Infrastructure</h3>
-      <p>Docker, Docker Compose, Nginx, AWS (S3, SES, Secrets Manager, CloudWatch)</p>
+        <div class="job">
+          <h3>LS Telcom Inc — Electrical Engineer / Software Systems Support</h3>
+          <div class="meta">Bowie, MD • Dec 2012 – Aug 2013</div>
+          <ul>
+            <li>Developed and tested spectrum monitoring and analysis software (LS Observer, Monitor Plus).</li>
+            <li>Implemented workflow and wizard-based configuration tools for client-specific system deployments.</li>
+            <li>Supported system deployment, upgrades, and customer training for U.S. government clients, including DISA.</li>
+          </ul>
+        </div>
+      </section>
 
-      <h3>Architecture & Systems Engineering</h3>
-      <p>Distributed systems, API design, protocol design, data modeling, system integration, reliability and troubleshooting, system verification and acceptance</p>
-    </section>
-
-    <section class="section">
-      <h2>PROFESSIONAL EXPERIENCE</h2>
-
-      <article class="job">
-        <h3>Founding Engineer / Lead Engineer — YiCircle (Pre-launch SaaS Platform)</h3>
-        <div class="date">May 2024 – Present</div>
-        <p>
-          Hands-on software engineer contributing to a real-time, multi-module SaaS platform supporting
-          communication, social networking, and service marketplace features.
-        </p>
-
-        <h4>Backend Services & Platform Components</h4>
-        <ul class="bullet-points">
-          <li>Implemented backend services using NestJS to support chat, events, user management, and transactional workflows.</li>
-          <li>Maintained REST and WebSocket APIs to support web and mobile clients.</li>
-          <li>Maintained Protocol Buffers schemas and ensured compatibility across web, Android, and iOS clients.</li>
-          <li>Implemented real-time messaging using WebSocket, including basic session handling and reconnection support.</li>
-          <li>Implemented persistence layers using PostgreSQL and Prisma, with Redis used for selected real-time and coordination workloads.</li>
+      <section class="projects">
+        <h2>Selected Systems & Technical Projects</h2>
+        <ul>
+          <li><strong>Realtime Messaging:</strong> WebSocket + Protocol Buffers, lifecycle/heartbeat/reconnect, backward-compatible schema updates.</li>
+          <li><strong>WebRTC Signaling:</strong> WebSocket signaling, TURN (coturn) deployment, connectivity troubleshooting.</li>
+          <li><strong>API/Protocol Layer:</strong> Shared protocol definitions across web & mobile clients; compatibility during rollouts.</li>
         </ul>
+      </section>
 
-        <h4>Real-time Communication & Media</h4>
-        <ul class="bullet-points">
-          <li>Implemented WebRTC-based real-time audio and video communication for cross-platform clients.</li>
-          <li>Implemented WebRTC signaling over WebSocket to support session establishment and reconnection.</li>
-          <li>Deployed and configured coturn (TURN) servers to support NAT traversal and restricted network environments.</li>
-          <li>Assisted with connection troubleshooting and basic reliability tuning across different network environments.</li>
+      <section class="education">
+        <h2>Education</h2>
+        <p><strong>Georgia Institute of Technology</strong> — M.S., Computer Science</p>
+        <p><strong>University of Maryland</strong> — B.S., Electrical Engineering</p>
+      </section>
+
+      <section class="certs">
+        <h2>Certifications</h2>
+        <ul>
+          <li>Spectrum Management Boot Camp — Radio Spectrum Institute, May 2013</li>
+          <li>Engineer‑in‑Training (EIT) — Maryland DLLR</li>
         </ul>
-
-        <h4>Cloud Infrastructure & Environment Setup</h4>
-        <ul class="bullet-points">
-          <li>Set up reproducible local development and test environments using Docker Compose (PostgreSQL, Redis, Nginx, application services).</li>
-          <li>Set up local, staging, and production environments and deployment workflows.</li>
-          <li>Integrated AWS services including S3, SES, Secrets Manager, and CloudWatch.</li>
-          <li>Integrated AWS CloudWatch for basic logging and operational monitoring.</li>
-        </ul>
-
-        <h4>Web and Mobile Clients</h4>
-        <ul class="bullet-points">
-          <li>Implemented and maintained web client using Nuxt 3, Vue 3, and Tailwind CSS.</li>
-          <li>Implemented mobile features on Android (Kotlin, Jetpack Compose) and iOS (SwiftUI).</li>
-          <li>Coordinated cross-platform feature implementation and ensured API and protocol compatibility across clients.</li>
-        </ul>
-
-        <h4>External Integrations & Delivery Support</h4>
-        <ul class="bullet-points">
-          <li>Integrated third-party payment and commerce services (Stripe and Square) for transactional workflows.</li>
-          <li>Contributed to architectural decisions and trade-offs balancing delivery speed and maintainability.</li>
-          <li>Supported release preparation and basic operational readiness for pre-launch environments.</li>
-        </ul>
-      </article>
-
-      <article class="job">
-        <h3>WMATA — SCADA Engineer</h3>
-        <div class="date">Washington, DC | Sep 2015 – Apr 2024</div>
-        <p>SCADA engineer supporting supervisory control and data acquisition systems for large-scale public transit operations.</p>
-
-        <h4>System Integration & Verification</h4>
-        <ul class="bullet-points">
-          <li>Supported system integration, verification, and commissioning activities for multi-vendor SCADA platforms covering power, electrical, control, and monitoring subsystems.</li>
-          <li>Supported integration of field devices, control systems, and backend monitoring platforms across multiple operational environments.</li>
-          <li>Worked with equipment vendors, system integrators, engineering teams, and operations staff to support interoperability and production readiness.</li>
-        </ul>
-
-        <h4>Architecture Review & Engineering Support</h4>
-        <ul class="bullet-points">
-          <li>Reviewed system architectures, interface designs, network layouts, and vendor submittals for transit infrastructure projects.</li>
-          <li>Participated in design and architecture review meetings to support reliability and operational requirements.</li>
-          <li>Supported evaluation of interfaces between control systems, databases, HMIs, and enterprise monitoring systems.</li>
-        </ul>
-
-        <h4>SCADA Platform Configuration</h4>
-        <ul class="bullet-points">
-          <li>Contributed to GE iFIX SCADA platform configuration, including database setup, tag configuration, HMI workflows, and system interfaces.</li>
-          <li>Customized and extended vendor SCADA frameworks to meet operational and safety requirements.</li>
-        </ul>
-
-        <h4>Testing, Acceptance & Commissioning</h4>
-        <li>Supported system integration testing, verification, and acceptance testing across electrical, control, and software components.</li>
-        <li>Developed and executed test plans, test procedures, and acceptance documentation.</li>
-        <li>Supported on-site and field commissioning activities and coordinated issue resolution with vendors and engineering teams.</li>
-        </ul>
-</article>
-
-<section class="section">
-  <h2>SELECTED SYSTEMS & TECHNICAL PROJECTS</h2>
-
-  <h3>Real-time Messaging and Event Delivery</h3>
-  <ul class="bullet-points">
-    <li>Implemented a real-time messaging system using WebSocket and Protocol Buffers.</li>
-    <li>Implemented basic connection lifecycle handling, heartbeat, and reconnection logic.</li>
-    <li>Supported backward-compatible schema updates for client and server communication.</li>
-  </ul>
-
-  <h3>WebRTC Signaling and Connectivity</h3>
-  <ul class="bullet-points">
-    <li>Implemented signaling logic over WebSocket for peer session setup.</li>
-    <li>Deployed and configured TURN servers (coturn) to support NAT traversal and restricted network scenarios.</li>
-    <li>Assisted with troubleshooting connectivity issues across mobile and desktop environments.</li>
-  </ul>
-
-  <h3>Multi-platform API and Protocol Layer</h3>
-  <ul class="bullet-points">
-    <li>Maintained shared protocol definitions used by web and mobile clients.</li>
-    <li>Ensured API and protocol compatibility during phased feature rollouts.</li>
-  </ul>
-</section>
-
-<section class="section">
-  <h2>EDUCATION</h2>
-  <h3>Georgia Institute of Technology — Atlanta, GA</h3>
-  <p>Master of Science in Computer Science</p>
-
-  <h3>University of Maryland — College Park, MD</h3>
-  <p>Bachelor of Science in Electrical Engineering</p>
-</section>
-
-<section class="section">
-  <h2>CERTIFICATIONS</h2>
-  <ul class="bullet-points">
-    <li>Spectrum Management Boot Camp — Radio Spectrum Institute, May 2013</li>
-    <li>Engineer-in-Training (EIT) Certification — Maryland Department of Labor (DLLR)</li>
-  </ul>
-</section>
-
-<footer class="footer">
-  <p>&copy; 2026 Weixing Chen</p>
-</footer>
-</div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
