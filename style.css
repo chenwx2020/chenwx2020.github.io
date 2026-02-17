@@ -1,39 +1,55 @@
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+.resume {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  margin: 20px;
 }
 
 .header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 15px;
-    text-align: center;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.list {
-    list-style-type: none;
+.contact-info {
+  margin-bottom: 20px;
+}
+
+.contact-info h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+.section h3 {
+  font-size: 20px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+}
+
+.bullet-points {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+@media print {
+  body {
+    margin: 0;
     padding: 0;
+  }
 }
 
-.list-item {
-    background-color: #f2f2f2;
-    margin: 10px 0;
-    padding: 15px;
-    border-radius: 5px;
-}
-
-.button {
-    background-color: #4CAF50;
-    border: none;
-    color: white;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 5px;
+@media (max-width: 600px) {
+  .resume {
+    margin: 10px;
+  }
+  .header {
+    font-size: 20px;
+  }
+  .section h3 {
+    font-size: 18px;
+  }
 }
